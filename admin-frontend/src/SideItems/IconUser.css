@@ -1,0 +1,27 @@
+.multicolor-icon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon {
+    color: #ff4757; /* Base color */
+  }
+  
+  .icon:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff4757, #1e90ff, #2ed573); /* Multicolor gradient */
+    clip-path: inset(0 0 0 0);
+    z-index: -1; /* Place behind the icon */
+  }
+  .icon-container {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff4757, #1e90ff, #2ed573);
+    -webkit-background-clip: text; /* This clips the background to the text */
+    color: transparent; /* Make the text transparent to see the gradient */
+    font-size: 24px; /* Set your desired size */
+    padding: 5px; /* Add some padding if needed */
+    border-radius: 50%; /* Optional: round the container */
+  }

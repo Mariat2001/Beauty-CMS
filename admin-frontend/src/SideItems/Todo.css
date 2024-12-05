@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.rating-container .dv-star-rating-star {
+  color: #FFD700; 
+}
+
+.App {
+  /* text-align: center; */
+}
+
+h1 {
+  color: #050505;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #ecdce3;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+.Todo:hover {
+  transform: translateY(-4px); /* Slight upward movement on hover */
+}
+.todo-btn {
+  background: #a28e9b;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  
+}
+
+.Todo {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #a28e9b; /* Background color for each box */
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px  #2c3e50 ;/* Light shadow to give it a boxed effect */
+  transition: transform 0.3s ease;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.completed {
+  color: #FFD700;
+  text-decoration: line-through;
+}
+
+.logout-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+}
+
+.custom-button {
+  background-color:#1390d8; 
+  color: white; 
+
+}
+
+.TodoListContainer {
+  max-height: 300px; /* Set a maximum height for the container */
+  overflow-y: auto;  /* Enable vertical scrolling when content exceeds the height */
+  padding-right: 10px; /* Add padding for the scrollbar */
+}
+
+/* Optional: Style the scrollbar for a more modern look (for WebKit browsers like Chrome/Safari) */
+.TodoListContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.TodoListContainer::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.TodoListContainer::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

@@ -1,0 +1,52 @@
+.layout-container {
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 20px; /* Space between rows */
+    padding: 20px;
+  }
+  
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+    gap: 20px;
+  }
+  
+  .column {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 10px;
+  }
+  
+  .complex-column {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); /* Two rows in the complex column */
+    gap: 10px;
+  }
+  
+  .nested-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns in each nested row */
+    gap: 10px;
+  }
+  .nested-row1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns in each nested row */
+    gap: 10px;
+  }
+  .cell {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3)
+  }
+  
+  .single-cell {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+  }
+
+ 

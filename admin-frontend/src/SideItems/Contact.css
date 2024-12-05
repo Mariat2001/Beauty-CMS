@@ -1,0 +1,187 @@
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-heading {
+    font-size: 3rem;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .content-box {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 2rem;
+    max-width: 800px;
+    width: 100%;
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  .add-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  .add-button:hover {
+    background-color: #2ecc71;
+  }
+  
+  .add-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+  }
+  
+  .spinner {
+    color: #3498db;
+    font-size: 2rem;
+  }
+  
+  .contact-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+  }
+  
+  .contact-row {
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-row:hover {
+    transform: scale(1.02);
+  }
+  
+  .contact-cell {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact-cell::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+  }
+  
+  .phone::before { background-color: #3498db; }
+  .email::before { background-color: #e74c3c; }
+  .instagram::before { background-color: #9b59b6; }
+  .facebook::before { background-color: #2980b9; }
+  .linkedin::before { background-color: #0077B5; }
+  .youtube::before { background-color: #e74c3c; }
+  .address::before { background-color: #f39c12; }
+  
+  .action-row {
+    text-align: right;
+  }
+  
+  .update-button, .delete-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0.5rem;
+  }
+  
+  .update-button {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .update-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .modal-content {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  
+  .submit-button, .cancel-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 0.5rem;
+  }
+  
+  .submit-button {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #2ecc71;
+  }
+  
+  .cancel-button {
+    background-color: #95a5a6;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    background-color: #7f8c8d;
+  }
+  
+  .toast {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    opacity: 0;
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  .toast.success { background-color: #27ae60; }
+  .toast.error { background-color: #e74c3c; }
+  .toast.info { background-color: #3498db; }
+  .toast.warning { background-color: #f39c12; }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+  }

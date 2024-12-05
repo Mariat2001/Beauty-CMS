@@ -1,0 +1,11 @@
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add some space between inputs */
+  }
+  
+  .addInputs1 {
+    flex: 1; /* Allow inputs to take up equal space */
+    margin-top: 20px;
+  }
+  
