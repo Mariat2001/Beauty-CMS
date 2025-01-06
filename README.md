@@ -18,7 +18,7 @@
 
 
 </p>
-<p>This project is a robust and user-friendly Content Management System (CMS) designed specifically for managing beauty and cosmetics e-commerce websites. It features a CRUD system for adding, updating, and deleting products, a dedicated page for statistics and dashboards, and functionality to integrate a map seamlessly .</p>
+<p>This project is a robust and user-friendly Content Management System (CMS) designed specifically for managing beauty and cosmetics e-commerce websites. It features a CRUD system for adding, updating, and deleting products,as well also for contacts information(telephone number, facebook, instagram....) a dedicated page for statistics and dashboards, and functionality to integrate a map seamlessly .</p>
 <hr>
 
 ##  Getting start
@@ -57,7 +57,7 @@ cd Beauty_Ecomm
 
 ```sh
 1. Navigate to the frontend folder:
-   cd Frontend_app
+   cd admin-backend
 ```
 ```sh
 1. Install dependencies:
@@ -65,7 +65,7 @@ cd Beauty_Ecomm
 ```
 ```sh
 2. Run the development server:
-    npm run dev
+    npm start
 ```
 
   B-***Backend Setup***
@@ -73,7 +73,7 @@ cd Beauty_Ecomm
 
 ```sh
 1. Navigate to the backend folder:
-   cd Backend_app
+   cd admin-frontend
 ```
 
 ```sh
@@ -101,13 +101,9 @@ cd Beauty_Ecomm
    npm install dotenv
 ```
 
-```sh
-7. jsonwebtoken: For generating and verifying JSON Web Tokens (JWT) for authentication:
-   npm install jsonwebtoken
-```
 
 ```sh
-8. Nodemon: Automatically restarts the server when code changes are detected:
+7. Nodemon: Automatically restarts the server when code changes are detected:
   npm install --save-dev nodemon
 ```
 
