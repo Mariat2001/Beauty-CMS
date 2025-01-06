@@ -49,7 +49,7 @@ git clone https://github.com/Mariat2001/Beauty-CMS
 3. Change to the project directory:
 
 ```sh
-cd movie_app
+cd Beauty_Ecomm
 ```
   A-***Frontend Setup***
   
@@ -69,7 +69,7 @@ cd movie_app
 ```
 
   B-***Backend Setup***
-1. In the Movie_App run this the Frontend Folder following these steps:
+1. In the Movie_App run this the Backend Folder following these steps:
 
 ```sh
 1. Navigate to the backend folder:
