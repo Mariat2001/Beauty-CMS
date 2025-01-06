@@ -25,46 +25,19 @@
 1. Create the  beauty_ecomm database in phpmyadmin containing these followinf tables:
    
 ```sh
-brands -> columns: id/name/category/description/image/updated_at/created_at 
-```
-```sh
-contact_us -> columns: id/telephone/instagram/email/facebook/linkedin/youtube/address/ updated_at/created_at 
-```
-```sh
-description -> columns: id/description/updated_at/created_at 
-```
-```sh
-fragrances -> columns: id/name/brands/description/image/price/category/type/scent/updated_at/created_at 
-```
-```sh
-hair_care -> columns: id/name/brand/description/image/price/category/type/updated_at/created_at 
-```
-```sh
-hair_care -> columns: id/name/brand/description/image/price/category/type/updated_at/created_at 
-```
-```sh
-home -> columns: id/nb of slideshow/image/about_description/updated_at/created_at 
-```
-```sh
-home -> columns: id/brand/description/category/type/price/image/name/updated_at/created_at 
-```
-```sh
-home -> columns: id/Name/latitude/longitude//updated_at/created_at 
-```
-```sh
-home -> columns: id/name/brand/description/price/image/category/type/updated_at/created_at 
-```
-```sh
-home -> columns: id/imgnb/image/updated_at/created_at 
-```
-```sh
-todo -> columns: id/description/created_at 
-```
-```sh
-tool_brush -> columns: id/name/brand/description/category/type/price/image/updated_at/created_at 
-```
-```sh
-todo -> columns: id/name/email/password/created_at/updated_at
+1-brands -> columns: id/name/category/description/image/updated_at/created_at
+2-contact_us -> columns: id/telephone/instagram/email/facebook/linkedin/youtube/address/ updated_at/created_at
+3-description -> columns: id/description/updated_at/created_at
+4-fragrances -> columns: id/name/brands/description/image/price/category/type/scent/updated_at/created_at
+5-hair_care -> columns: id/name/brand/description/image/price/category/type/updated_at/created_at
+6-home -> columns: id/nb of slideshow/image/about_description/updated_at/created_at
+7-makeup -> columns: id/brand/description/category/type/price/image/name/updated_at/created_at
+8-map -> columns: id/Name/latitude/longitude//updated_at/created_at
+9-skin_care -> columns: id/name/brand/description/price/image/category/type/updated_at/created_at
+10-slideshow -> columns: id/imgnb/image/updated_at/created_at
+11-todo -> columns: id/description/created_at
+12-tool_brush -> columns: id/name/brand/description/category/type/price/image/updated_at/created_at
+13-users -> columns: id/name/email/password/created_at/updated_at
 ```
 ps:id should be auto incremented.
 
